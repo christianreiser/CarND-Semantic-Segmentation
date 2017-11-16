@@ -51,38 +51,38 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
 tests.test_layers(layers)
 
 
-def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
-    """
-    Build the TensorFLow loss and optimizer operations.
-    :param nn_last_layer: TF Tensor of the last layer in the neural network
-    :param correct_label: TF Placeholder for the correct label image
-    :param learning_rate: TF Placeholder for the learning rate
-    :param num_classes: Number of classes to classify
-    :return: Tuple of (logits, train_op, cross_entropy_loss)
-    """
-    # TODO: Implement function
-    return None, None, None
-tests.test_optimize(optimize)
+# def optimize(nn_last_layer, correct_label, learning_rate, num_classes):
+#     """
+#     Build the TensorFLow loss and optimizer operations.
+#     :param nn_last_layer: TF Tensor of the last layer in the neural network
+#     :param correct_label: TF Placeholder for the correct label image
+#     :param learning_rate: TF Placeholder for the learning rate
+#     :param num_classes: Number of classes to classify
+#     :return: Tuple of (logits, train_op, cross_entropy_loss)
+#     """
+#     # TODO: Implement function
+#     return None, None, None
+# tests.test_optimize(optimize)
 
 
-def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_loss, input_image,
-             correct_label, keep_prob, learning_rate):
-    """
-    Train neural network and print out the loss during training.
-    :param sess: TF Session
-    :param epochs: Number of epochs
-    :param batch_size: Batch size
-    :param get_batches_fn: Function to get batches of training data.  Call using get_batches_fn(batch_size)
-    :param train_op: TF Operation to train the neural network
-    :param cross_entropy_loss: TF Tensor for the amount of loss
-    :param input_image: TF Placeholder for input images
-    :param correct_label: TF Placeholder for label images
-    :param keep_prob: TF Placeholder for dropout keep probability
-    :param learning_rate: TF Placeholder for learning rate
-    """
-    # TODO: Implement function
-    pass
-tests.test_train_nn(train_nn)
+# def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_loss, input_image,
+#              correct_label, keep_prob, learning_rate):
+#     """
+#     Train neural network and print out the loss during training.
+#     :param sess: TF Session
+#     :param epochs: Number of epochs
+#     :param batch_size: Batch size
+#     :param get_batches_fn: Function to get batches of training data.  Call using get_batches_fn(batch_size)
+#     :param train_op: TF Operation to train the neural network
+#     :param cross_entropy_loss: TF Tensor for the amount of loss
+#     :param input_image: TF Placeholder for input images
+#     :param correct_label: TF Placeholder for label images
+#     :param keep_prob: TF Placeholder for dropout keep probability
+#     :param learning_rate: TF Placeholder for learning rate
+#     """
+#     # TODO: Implement function
+#     pass
+# tests.test_train_nn(train_nn)
 
 
 def run():
