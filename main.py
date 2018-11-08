@@ -134,7 +134,7 @@ def run():
     batch_size = 4
     data_dir = './data'
     runs_dir = './runs'
-    tests.test_for_kitti_dataset(data_dir)
+    tests.test_for_airsim_dataset(data_dir)
     
     helper.maybe_download_pretrained_vgg(data_dir) # Download pretrained vgg model if not already there
 
